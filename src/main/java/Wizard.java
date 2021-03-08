@@ -25,8 +25,25 @@ public class Wizard extends Gnome implements Conjuring {
         return ("Маг " + name + " исчез и увернулся");
     }
 
+
+
     @Override
-    public String shield() {
-        return ("Маг " + name + " отразил атаку магическим щитом");
+    public String iceArrow() {
+        return ("Маг " + name + " запустил ледяную стрелу");
+    }
+
+    @Override
+    public String flash() {
+        return ("Маг " + name + " ударил молнией");
+    }
+
+    @Override
+    public String iceShield() {
+        return ("Маг " + name + " отразил атаку ледяным щитом");
+    }
+
+    @Override
+    public String fireShield() {
+        return ("Маг " + name + " отразил атаку огненным щитом");
     }
 }

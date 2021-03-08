@@ -21,12 +21,13 @@ public class Battle {
 
         for (int i = 0; i < count; i++) {   // Не судите строго симулятор боя, я старался))
             if (isBattle) {                 // Атака первого воина
-                toDo = random.nextInt(2);
-                if (toDo == 0) {
-                    System.out.println(odin.fireBall());
+                toDo = random.nextInt(4);
 
-                } else {
-                    System.out.println(odin.iceBall());
+                switch (toDo) {
+                    case (0) -> System.out.println(odin.fireBall());
+                    case (1) -> System.out.println(odin.iceBall());
+                    case (2) -> System.out.println(odin.iceArrow());
+                    default -> System.out.println(odin.flash());
                 }
 
                 toDo = random.nextInt(4);
@@ -51,11 +52,12 @@ public class Battle {
                         default -> System.out.println(ulrick.throwsABow());
                     }
 
-                    toDo = random.nextInt(4);
+                    toDo = random.nextInt(5);
                     switch (toDo) {
                         case (0) -> System.out.println(odin.invisible());
-                        case (1) -> System.out.println(odin.shield());
-                        case (2) -> {
+                        case (1) -> System.out.println(odin.iceShield());
+                        case (2) -> System.out.println(odin.fireShield());
+                        case (3) -> {
                             System.out.println(odin.run());
                             isBattle = false;
                         }

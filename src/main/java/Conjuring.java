@@ -1,6 +1,9 @@
 public interface Conjuring {
     String fireBall();
     String iceBall();
+    String iceArrow();
+    String flash();
     String invisible();
-    String shield();
+    String iceShield();
+    String fireShield();
 }
