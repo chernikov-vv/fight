@@ -24,47 +24,71 @@ public class Battle {
                 toDo = random.nextInt(4);
 
                 switch (toDo) {
-                    case (0) -> System.out.println(odin.fireBall());
-                    case (1) -> System.out.println(odin.iceBall());
-                    case (2) -> System.out.println(odin.iceArrow());
-                    default -> System.out.println(odin.flash());
+                    case 0:
+                        System.out.println(odin.fireBall());
+                        break;
+                    case 1:
+                        System.out.println(odin.iceBall());
+                        break;
+                    case 2:
+                        System.out.println(odin.iceArrow());
+                        break;
+                    default:
+                        System.out.println(odin.flash());
+                        break;
                 }
 
                 toDo = random.nextInt(4);
                 switch (toDo) {
-                    case (0) -> System.out.println(ulrick.bendDown());
-                    case (1) -> System.out.println(ulrick.jump());
-                    case (2) -> {
+                    case 0:
+                        System.out.println(ulrick.bendDown());
+                        break;
+                    case 1:
+                        System.out.println(ulrick.jump());
+                        break;
+                    case 2:
                         System.out.println(ulrick.run());
                         isBattle = false;
-                    }
-                    default -> {
+                        break;
+                    default:
                         System.out.println(ulrick.death());
                         isBattle = false;
-                    }
+                        break;
                 }
 
                 if (isBattle) {               // Атака второго воина
                     toDo = random.nextInt(3);
                     switch (toDo) {
-                        case (0) -> System.out.println(ulrick.hailOfArrows());
-                        case (1) -> System.out.println(ulrick.shootArrow());
-                        default -> System.out.println(ulrick.throwsABow());
+                        case 0:
+                            System.out.println(ulrick.hailOfArrows());
+                            break;
+                        case 1:
+                            System.out.println(ulrick.shootArrow());
+                            break;
+                        default:
+                            System.out.println(ulrick.throwsABow());
+                            break;
                     }
 
                     toDo = random.nextInt(5);
                     switch (toDo) {
-                        case (0) -> System.out.println(odin.invisible());
-                        case (1) -> System.out.println(odin.iceShield());
-                        case (2) -> System.out.println(odin.fireShield());
-                        case (3) -> {
+                        case 0:
+                            System.out.println(odin.invisible());
+                            break;
+                        case 1:
+                            System.out.println(odin.iceShield());
+                            break;
+                        case 2:
+                            System.out.println(odin.fireShield());
+                            break;
+                        case 3:
                             System.out.println(odin.run());
                             isBattle = false;
-                        }
-                        default -> {
+                            break;
+                        default:
                             System.out.println(odin.death());
                             isBattle = false;
-                        }
+                            break;
                     }
                 }
             }
